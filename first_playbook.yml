@@ -1,6 +1,0 @@
----
-
-- name: Whoami
-  tasks:
-    - name: Print the actual user
-      command: whoami
