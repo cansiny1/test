@@ -4,4 +4,4 @@
   hosts: all
   tasks:
     - name: Print the actual user
-      command: wait 5m
+      command: sleep 5m
