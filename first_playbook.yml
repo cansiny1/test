@@ -3,10 +3,8 @@
 - hosts: all
 
   tasks:
-  - name: Collect only facts returned by facter
-    ansible.builtin.setup:
-      gather_subset:
-        - '!all'
-        - '!any'
-        - facter
+  - name: copy remote file 
+    ansible.builtin.copy:
+      src: /tower-prod.eu.rabonet.com/etc/ansible/ansible.cfg
+      dest: /home/facet/ansible.cfg
     
